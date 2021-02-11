@@ -1,0 +1,62 @@
+.card {
+  transition: ease-in-out 0.2s;
+}
+
+.card:hover {
+  transform: translateY(0.5rem) scale(1.1, 1.1);
+  filter: brightness(1.25);
+  transition: ease-in-out 0.2s
+}
+
+.card-img-top {
+  padding: 5%;
+  filter: blur(16px);
+  transition: ease-in-out 0.2s
+}
+
+.nav {
+  margin: 1.5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.nav-item {
+  border-radius: 1rem;
+  background-color: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-item:hover {
+  background-color: #121212;
+  filter: brightness(1.15);
+  transition: ease-in-out 0.3s;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-2%);
+    filter: opacity(0%);
+  }
+  100% {
+    transform: translateX(0%);
+    filter: opacity(100%);
+  }
+}
+
+body {  
+  animation: 0.25s ease-in-out 0s 1 slide;
+}
