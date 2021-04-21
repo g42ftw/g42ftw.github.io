@@ -1,55 +1,47 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>$ g42ftw # projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>$ g42ftw</title>
+  <script>
+		var t = ["$ g42ftw", "$ g42ft", "$ g42f", "$ g42", "$ g42", "$ g42", "$ g42f", "$ g42ft", "$ g42ftw", "$ g42ftw"];
+		var c = 0;
+		var i = setInterval(change, 2000);
+
+		function change() {
+			document.title = t[c];
+			c++;
+			if (c >= t.length) {
+				c = 0;
+			}
+		}
+	</script>
 </head>
-<body style="background-color: #121212; font-family: Bahnschrift; src:local(font.ttf)">
+<body style="font-family: Bahnschrift; src:local(font.ttf)">
     <ul class="nav nav-pills nav-fill">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link home" href="index.html">🏠</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="bio.html">Bio</a>
+          <a class="nav-link bio" href="bio.html">📃</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="box-shadow: 0rem 0rem 2rem 0.5rem rgba(0, 113, 255, .4)">Projects</a>
+          <a class="nav-link projects active" href="#">🚧 Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link contact" href="contact.html">🤙</a>
         </li>
       </ul>
 
       <div class="row" style="margin: 1rem; margin-left: 5rem; margin-right: 5rem;">
-        <div class="col-sm-3">
-            <a href="https://github.com/clangremlini/fet-loader" style="text-decoration: none"><div class="card text-white bg-primary mb-3" style="max-width: 18rem">
-                <div class="card-header">GitHub</div>
-                <img class="card-img-top" src="projects-fetloader.png">
-                <div class="card-body">
-                  <h5 class="card-title">fet-loader</h5>
-                  <p class="card-text">A simple CS:GO cheat injector written on AHK and a sort of web magic.</p>
-                </div>
-              </div>
-            </a>
-        </div>
-        <div class="col-sm-3">
-            <a href="https://github.com/g42ftw/fetloader-dll-repo-vmprotect" style="text-decoration: none"><div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">GitHub</div>
-                <img class="card-img-top" src="projects-fetloader.png">
-                <div class="card-body">
-                  <h5 class="card-title">fetloader-dll-repo-vmprotect</h5>
-                  <p class="card-text">A fork of official FET Loader repository with all cheats VMProtect-ed (some DLLs were added too).</p>
-                </div>
-              </div>
-            </a>
-        </div>
         <div class="col-sm-3">
             <a href="https://github.com/g42ftw/g42ftw.github.io" style="text-decoration: none"><div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
                 <div class="card-header">GitHub</div>
                 <img class="card-img-top" src="projects-pages.png">
                 <div class="card-body">
                   <h5 class="card-title">This page</h5>
-                  <p class="card-text">What did you expect from me?</p>
+                  <p class="card-text">Still nothing else 😳</p>
                 </div>
               </div>
             </a>

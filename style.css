@@ -16,20 +16,18 @@
 
 .nav {
   margin: 1.5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .nav-item {
-  border-radius: 1rem;
+  border-radius: 0.25rem;
   background-color: none;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
 .nav-item:hover {
-  background-color: #121212;
-  filter: brightness(1.15);
   transition: ease-in-out 0.3s;
 }
 
@@ -59,4 +57,43 @@ html {
 
 body {  
   animation: 0.25s ease-in-out 0s 1 slide;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212 !important;
+        color: #ededed !important;
+    }
+    .nav-item:hover {
+        background-color: #121212;
+        filter: brightness(1.15);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ededed !important;
+        color: #121212 !important;
+    }
+    .nav-item:hover {
+        background-color: #ededed;
+        filter: brightness(0.85);
+    }
+}
+
+active {
+    box-shadow: 0rem 0rem 2rem 0.5rem rgba(0, 113, 255, .4);
+}
+
+.btn:hover {
+    filter: brightness(1.15);
+}
+
+.jumbotron {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.row {
+    justify-content: center;
 }
